@@ -1,0 +1,207 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "090062a7-488d-4727-a5f4-f58e1da51b90",
+            "created_time": "2024-08-14T17:58:00.000Z",
+            "last_edited_time": "2024-08-14T18:07:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "fffd872b-594c-8106-a763-000299c61d29"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "fffd872b-594c-8106-a763-000299c61d29"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "b610b0d1-ea87-4cbc-8551-aae60cf60dfc"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Prioridade": {
+                    "id": "Xvi_",
+                    "type": "select",
+                    "select": {
+                        "id": "818830ee-aca9-444c-b0a2-b01c9415c996",
+                        "name": "Concluído",
+                        "color": "green"
+                    }
+                },
+                "Status": {
+                    "id": "%7CN_P",
+                    "type": "status",
+                    "status": {
+                        "id": "4f45852e-2780-4fed-9f6c-f9de785118cb",
+                        "name": "Concluído",
+                        "color": "green"
+                    }
+                },
+                "Tarefa": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Estudar",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Estudar",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Estudar-090062a7488d4727a5f4f58e1da51b90",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "cdaad327-c127-4db0-a382-a83078b35db9",
+            "created_time": "2024-08-14T17:58:00.000Z",
+            "last_edited_time": "2024-08-14T18:02:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "fffd872b-594c-8106-a763-000299c61d29"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "fffd872b-594c-8106-a763-000299c61d29"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "b610b0d1-ea87-4cbc-8551-aae60cf60dfc"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Prioridade": {
+                    "id": "Xvi_",
+                    "type": "select",
+                    "select": null
+                },
+                "Status": {
+                    "id": "%7CN_P",
+                    "type": "status",
+                    "status": {
+                        "id": "b6ba3aea-1fc8-4980-a7bd-cb1c93fcc898",
+                        "name": "Não iniciada",
+                        "color": "default"
+                    }
+                },
+                "Tarefa": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Descansar",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Descansar",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Descansar-cdaad327c1274db0a382a83078b35db9",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "f66d71a0-c8de-4b39-9e35-6bb45bf6ba59",
+            "created_time": "2024-08-14T17:58:00.000Z",
+            "last_edited_time": "2024-08-14T18:08:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "fffd872b-594c-8106-a763-000299c61d29"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "fffd872b-594c-8106-a763-000299c61d29"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "b610b0d1-ea87-4cbc-8551-aae60cf60dfc"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "Prioridade": {
+                    "id": "Xvi_",
+                    "type": "select",
+                    "select": {
+                        "id": "206a2cad-b5e6-46fd-a280-4105bd6889fc",
+                        "name": "Em andamento",
+                        "color": "blue"
+                    }
+                },
+                "Status": {
+                    "id": "%7CN_P",
+                    "type": "status",
+                    "status": {
+                        "id": "37a31567-4f85-4229-a11e-fd349064271e",
+                        "name": "Em andamento",
+                        "color": "blue"
+                    }
+                },
+                "Tarefa": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Trabalhar",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Trabalhar",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Trabalhar-f66d71a0c8de4b399e356bb45bf6ba59",
+            "public_url": null
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {},
+    "request_id": "dd5ebc52-6015-4d2d-b1ff-2fc1ca488b6d"
+}
