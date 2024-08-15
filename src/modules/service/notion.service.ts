@@ -63,12 +63,17 @@ async function NotionList() {
 
         const result = await notion.databases.query(filter);
 
-        const tasks = result.results.map(page => {
-            return {};
+        const tasks = result.results.map((page: any) => {
+            return {
+                id: page.id,
+                titulo: page.properties.Tarefa.title[0].plain_text,
+                status: page.properties.Status.status.name,
+                prioridade: page.properties.Prioridade.select,
+            };
         });
 
         console.log('Consultando Dados do Notion');
-        console.log(JSON.stringify(tasks, null, 2));
+        console.log(tasks);
     } catch (error) {
         console.error('Erro ao consultar o banco de dados:', error);
     }
