@@ -95,10 +95,87 @@ async function NotionCreate() {
             database_id: databaseId,
         };
 
-        const tasks = await notion.pages.create;
+        const result = await notion.databases.query(filter);
+
+        const response = await notion.pages.create({
+            parent: {
+                database_id: databaseId,
+            },
+            properties: {
+                Tarefa: {
+                    title: [
+                        {
+                            text: {
+                                content: 'Nova Tarefa',
+                            },
+                        },
+                    ],
+                },
+                Status: {
+                    status: {
+                        name: 'Não iniciada',
+                    },
+                },
+                Prioridade: {
+                    select: {
+                        name: 'Alta',
+                    },
+                },
+            },
+        });
+
+        console.log('Criando Tarefa');
+        console.log(response);
     } catch (error) {
         console.error('Erro ao consultar o banco de dados:', error);
     }
 }
 
-export { NotionFindAll, NotionFindById, NotionList, NotionCreate };
+async function NotionUpdate(id: string) {
+    try {
+        const notion = new Client({ auth: process.env.NOTION_TOKEN });
+
+        const databaseId = process.env.ID_DO_BANCO;
+
+        if (!databaseId) {
+            throw new Error(
+                'ID_DO_BANCO não está definido nas variáveis de ambiente.',
+            );
+        }
+
+        const filter = {
+            database_id: databaseId,
+        };
+
+        const result = await notion.databases.query(filter);
+
+        const response = await notion.pages.update({
+            page_id: id,
+            properties: {
+                Status: {
+                    status: {
+                        name: 'Concluído',
+                    },
+                },
+                Prioridade: {
+                    select: {
+                        name: 'Concluído',
+                    },
+                },
+            },
+        });
+
+        console.log('Atualizando');
+        console.log(response);
+    } catch (error) {
+        console.error('Erro ao Atualizar o banco de dados:', error);
+    }
+}
+
+export {
+    NotionFindAll,
+    NotionFindById,
+    NotionList,
+    NotionCreate,
+    NotionUpdate,
+};
